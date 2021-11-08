@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -9,24 +9,88 @@
     display: flex;
     list-style: none; }
     .nav-container .nav-ul li {
+      margin: 0 10px; }
+    .nav-container .nav-ul .btn-login {
       width: 146px;
       height: 36px;
-      margin: 0 10px;
       padding: 10px;
       border-radius: 37px;
       text-align: center;
-      font-weight: 800;
-      font-size: 14px; }
-    .nav-container .nav-ul .btn-login {
+      font-weight: 700;
+      font-size: 14px;
       background-color: #FFF30D; }
     .nav-container .nav-ul .btn-register {
+      width: 146px;
+      height: 36px;
+      padding: 10px;
+      border-radius: 37px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+      background-color: none;
       border: 1px solid #0C3944; }
     .nav-container .nav-ul a {
       text-decoration: none;
       color: #000000; }
+
+.banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: 701px;
+  background-color: #0C3944;
+  border-radius: 27px;
+  margin: 20px 17px; }
+  .banner-container .text-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 20px 0; }
+    .banner-container .text-banner h2 {
+      font-weight: 900;
+      font-size: 80px; }
+    .banner-container .text-banner p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 36px;
+      margin: 0 25%; }
+  .banner-container .container-btn-banner {
+    width: 255px;
+    height: 58px;
+    padding: 10px;
+    border-radius: 37px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #FFF30D;
+    margin-top: 20px; }
+    .banner-container .container-btn-banner .btn-banner {
+      list-style: none; }
+  .banner-container .item-background {
+    position: absolute;
+    width: 355px;
+    height: 135px;
+    padding: 10px;
+    border-radius: 37px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #F3976B;
+    border-radius: 108px;
+    transform: rotate(20.2deg);
+    left: 85%;
+    top: 654px; }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; }
+
+body {
+  overflow: hidden; }

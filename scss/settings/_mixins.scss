@@ -1,0 +1,10 @@
+@mixin btnNav ($w, $h, $color){
+    width: $w;
+    height: $h;
+    padding: 10px;
+    border-radius: 37px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: $color;
+}

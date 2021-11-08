@@ -9,19 +9,13 @@
         display: flex;
         list-style: none;
         li{
-            width: 146px;
-            height: 36px;
             margin: 0 10px;
-            padding: 10px;
-            border-radius: 37px;
-            text-align: center;
-            font-weight: 800;
-            font-size: 14px;
         }
         .btn-login{
-            background-color: $broom;
+            @include btnNav(146px, 36px, $broom);
         }
         .btn-register{
+            @include btnNav(146px, 36px, none);
             border: 1px solid $blue-diane;
         }
         a{
