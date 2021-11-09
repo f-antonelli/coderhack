@@ -1,0 +1,162 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    .big-bean{
+        z-index: 100;
+        @include btnNav(100%, 2400px, $blue-diane);
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        border-radius: 800px;
+    }
+    .atlantis-bean{
+        @include btnNav(480px, 900px, $atlantis);
+        position: absolute;
+        right: 0px;
+        top: 90px;
+        border-radius: 240px; 
+        transform: rotate(-40deg);
+    }
+    .calypso-bean{
+        @include btnNav(220px, 100px, $calypso);
+        position: absolute;
+        left: 35%;
+        top: 5rem;
+        border-radius: 100px; 
+        transform: rotate(18deg);
+    }
+    .borderbean-silvertree{
+        @include btnNav(300px, 120px, none);
+        position: absolute;
+        right: 32%;
+        top: 6rem;
+        border-radius: 100px; 
+        transform: translate(-10px, -50px) rotate(-29deg);
+        border: 5px solid $silver-tree;
+    }
+    .beanimg-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-bean{
+            z-index: 999;
+            width: 56.25em;
+            height: 31.25em;
+            border-radius: 332px;
+            transform: rotate(-7.83deg);
+            object-fit: cover;
+            box-shadow: 10px 11px 0px #FFF30D;
+            margin: 100px;
+        }
+    }
+    .box-container{
+        z-index: 9999;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .box-participants{
+            display: flex;
+            position: relative;
+            align-items: center;
+            margin: 30px;
+            .minibean{
+                position: absolute;
+                right: 60px;
+                top: -40px;
+                @include btnNav(90px, 200px, none);
+                border-radius: 100px;
+                transform: rotate(40deg);
+                object-fit: cover;
+            }
+            .woman1{
+                background: url(../images/participants/1.png) center;
+            }
+            .woman2{
+                background: url(../images/participants/2.png) center;
+                object-fit: cover;
+            }
+            p{
+                margin: 30px;
+                font-size: 28px;
+                font-weight: 400;
+                color: white;
+                max-width: 50%;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        .firstbox{
+            @include btnNav(500px, 125px, $calypso);
+            box-shadow: 6px 7px 0px #000000;
+        }
+        .secondbox{
+            @include btnNav(500px, 125px, $silver-tree);
+            box-shadow: 6px 7px 0px $parsley;
+
+        }
+    }
+    footer{
+        z-index: 9999999;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        .footer-container{
+            z-index: 5;
+            position: relative;
+            height: auto;
+            padding: 50px 100px;
+            background:white;
+            color: $blue-diane;
+            border-radius: 27px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            img{
+                width: auto;
+                height: 30px;
+            }
+            .links{
+                h4{
+                    font-size: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $blue-diane;
+                }
+            }
+            .social-media{
+                display: flex;
+                li{
+                    list-style: none;
+                    a{
+                        display: inline-block;
+                        margin-right: 35px;
+                        background: $blue-diane;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        border-radius: 50%;
+                        .fab{
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

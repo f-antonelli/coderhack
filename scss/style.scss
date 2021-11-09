@@ -4,6 +4,8 @@
 @import "settings/mixins";
 @import "components/navbar";
 @import "components/banner";
+@import "components/holdUp";
+@import "components/main";
 
 *{
     padding: 0;
@@ -13,5 +15,5 @@
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
