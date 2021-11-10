@@ -4,7 +4,7 @@ main{
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 130vh;
     overflow: hidden;
     .big-bean{
         z-index: 100;
@@ -25,13 +25,14 @@ main{
     .calypso-bean{
         @include btnNav(220px, 100px, $calypso);
         position: absolute;
-        left: 35%;
+        left: 38vw;
         top: 5rem;
         border-radius: 100px; 
         transform: rotate(18deg);
     }
     .borderbean-silvertree{
         @include btnNav(300px, 120px, none);
+        display: block;
         position: absolute;
         right: 32%;
         top: 6rem;
@@ -39,34 +40,45 @@ main{
         transform: translate(-10px, -50px) rotate(-29deg);
         border: 5px solid $silver-tree;
     }
+    .borderbean-cerisedark{
+        @include btnNav(220px, 100px, none);
+        position: absolute;
+        left: -90px;
+        top: 5rem;
+        border-radius: 100px; 
+        border: 5px solid $cerise-dark;
+        transform: rotate(18deg);
+    }
     .beanimg-container{
         display: flex;
         justify-content: center;
         align-items: center;
         .img-bean{
             z-index: 999;
-            width: 56.25em;
-            height: 31.25em;
+            width: 50rem;
+            height: 28rem;
             border-radius: 332px;
             transform: rotate(-7.83deg);
             object-fit: cover;
             box-shadow: 10px 11px 0px #FFF30D;
-            margin: 100px;
+            margin: 100px 100px 20px 100px;
         }
     }
-    .box-container{
-        z-index: 9999;
-        position: relative;
+    section{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        margin: 0 90px;
+        .box-container{
+            z-index: 9999;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 30px;
         .box-participants{
             display: flex;
             position: relative;
             align-items: center;
-            margin: 30px;
             .minibean{
                 position: absolute;
                 right: 60px;
@@ -77,11 +89,13 @@ main{
                 object-fit: cover;
             }
             .woman1{
-                background: url(../images/participants/1.png) center;
+                background: url(../images/participants/1.png) no-repeat center center fixed;
+                object-fit: contain;
             }
             .woman2{
-                background: url(../images/participants/2.png) center;
-                object-fit: cover;
+                background: url(../images/participants/3.jpg);
+                object-fit: fill;
+                background-position: 62% 13%;
             }
             p{
                 margin: 30px;
@@ -94,6 +108,14 @@ main{
                 }
             }
         }
+        .text-box{
+            width: 550px;
+            color: white;
+            p{
+                margin: 30px;
+                font-size: 1.8em;
+            }
+        }
         .firstbox{
             @include btnNav(500px, 125px, $calypso);
             box-shadow: 6px 7px 0px #000000;
@@ -103,6 +125,7 @@ main{
             box-shadow: 6px 7px 0px $parsley;
 
         }
+    }
     }
     footer{
         z-index: 9999999;

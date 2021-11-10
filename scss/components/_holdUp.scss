@@ -5,12 +5,30 @@
     justify-content: center;
     align-items: center;
     color: $blue-diane;
+    .brickred-bean{
+        @include btnNav(260px, 140px, $brick-red);
+        position: absolute;
+        left: -100px;
+        bottom: 150px;
+        border-radius: 100px; 
+        transform: rotate(-18deg);
+    }
+    .broom-bean{
+        @include btnNav(250px, 100px, $broom);
+        position: absolute;
+        left: 23vw;
+        bottom: 170px;
+        border-radius: 100px; 
+        transform: rotate(-30deg);
+    }
         .h3-holdup{
-            max-width: 25vw;
+            z-index: 100;
+            width: 400px;
             padding: 40px;
             h3{
                 font-weight: 900;
-                font-size: 3.5em;
+                font-size: 3.5rem;
+                text-align: center;
             }
         }
         .p-holdup{

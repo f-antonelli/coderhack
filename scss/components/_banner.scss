@@ -8,10 +8,10 @@
     height: 701px;
     background: 
     linear-gradient(180deg, rgba(12, 57, 68, 0) 0%, rgba(12, 57, 68, 0.8) 100%), 
-    linear-gradient(0deg, rgba(12, 57, 68, 0.3), rgba(12, 57, 68, 0.3)), url(../images/team/team.png);
-    object-fit: cover;
+    linear-gradient(0deg, rgba(12, 57, 68, 0.3), rgba(12, 57, 68, 0.3)), url(../images/team/team.png) no-repeat center center fixed;
+    background-size: cover;
     border-radius: 27px;
-    margin: 20px 17px;
+    margin: 0 17px 20px 17px;
     .text-banner{
         display: flex;
         flex-direction: column;
@@ -20,8 +20,13 @@
         color: #FFFFFF;
         margin: 20px 0;
         h2{
-            font-weight: 900;
-            font-size: 80px;
+            font-weight: 600;
+            font-size: 70px;
+            text-align: center;
+            span{
+                font-weight: 1000;
+                font-size: 100px;
+            }
         }
         p{
             text-align: center;
@@ -31,18 +36,27 @@
         }
     }
     .container-btn-banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include btnNav(255px, 58px, $broom);
         margin-top: 20px;
         .btn-banner{
             list-style: none;
+            a{
+                font-size: 1.5em;
+                font-weight: 800;
+                color: $blue-diane;
+                text-decoration: none;
+            }
         }
     }
-    .item-background{
+    .flamepea-bean{
         position: absolute;
         @include btnNav(355px, 135px, $flame-pea);
         border-radius: 108px;
         transform: rotate(20.2deg);
-        left: 85%;
+        right: -200px;
         top: 654px;
     }
 }
