@@ -363,13 +363,15 @@ main {
 @media (max-width: 850px) {
   .container-holdup .brickred-bean {
     left: -150px; }
+  .container-holdup .broom-bean {
+    left: 32vw; }
   .banner-container .flamepea-bean {
     right: -250px; }
   main .beanimg-container .img-bean {
     width: 38rem;
     height: 20rem; }
   main .borderbean-cerisedark {
-    top: 2rem; }
+    top: .5rem; }
   main footer .footer-container {
     display: flex;
     flex-direction: column;
