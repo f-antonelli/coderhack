@@ -22,24 +22,6 @@ main{
         border-radius: 240px; 
         transform: rotate(-40deg);
     }
-    .calypso-bean{
-        @include btnNav(220px, 100px, $calypso);
-        position: absolute;
-        left: 38vw;
-        top: 5rem;
-        border-radius: 100px; 
-        transform: rotate(18deg);
-    }
-    .borderbean-silvertree{
-        @include btnNav(300px, 120px, none);
-        display: block;
-        position: absolute;
-        right: 32%;
-        top: 6rem;
-        border-radius: 100px; 
-        transform: translate(-10px, -50px) rotate(-29deg);
-        border: 5px solid $silver-tree;
-    }
     .borderbean-cerisedark{
         @include btnNav(220px, 100px, none);
         position: absolute;
@@ -50,9 +32,27 @@ main{
         transform: rotate(18deg);
     }
     .beanimg-container{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        .calypso-bean{
+            @include btnNav(220px, 100px, $calypso);
+            position: absolute;
+            left: 200px;
+            top: 90px;
+            border-radius: 100px; 
+            transform: rotate(18deg);
+        }
+        .borderbean-silvertree{
+            @include btnNav(300px, 120px, none);
+            position: absolute;
+            right: 200px;
+            top: 95px;
+            border-radius: 100px; 
+            transform: translate(-10px, -50px) rotate(-29deg);
+            border: 5px solid $silver-tree;
+        }
         .img-bean{
             z-index: 999;
             width: 50rem;
@@ -89,8 +89,7 @@ main{
                 object-fit: cover;
             }
             .woman1{
-                background: url(../images/participants/1.png) no-repeat center center fixed;
-                object-fit: contain;
+                background: url(../images/participants/1.png) center center;
             }
             .woman2{
                 background: url(../images/participants/3.jpg);

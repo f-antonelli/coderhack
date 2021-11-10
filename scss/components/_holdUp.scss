@@ -1,4 +1,5 @@
 .container-holdup{
+    position: relative;
     display: flex;
     margin: 0 200px 100px 200px;
     min-height: 30vh;
@@ -8,20 +9,13 @@
     .brickred-bean{
         @include btnNav(260px, 140px, $brick-red);
         position: absolute;
-        left: -100px;
+        left: -300px;
         bottom: 150px;
         border-radius: 100px; 
         transform: rotate(-18deg);
     }
-    .broom-bean{
-        @include btnNav(250px, 100px, $broom);
-        position: absolute;
-        left: 23vw;
-        bottom: 170px;
-        border-radius: 100px; 
-        transform: rotate(-30deg);
-    }
         .h3-holdup{
+            position: relative;
             z-index: 100;
             width: 400px;
             padding: 40px;
@@ -29,6 +23,15 @@
                 font-weight: 900;
                 font-size: 3.5rem;
                 text-align: center;
+            }
+            .broom-bean{
+                z-index: -1;
+                @include btnNav(250px, 100px, $broom);
+                position: absolute;
+                left: 70px;
+                top: 50px;
+                border-radius: 100px; 
+                transform: rotate(-30deg);
             }
         }
         .p-holdup{

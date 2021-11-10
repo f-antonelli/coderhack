@@ -2,14 +2,14 @@
     .container-holdup{
         display: flex;
         flex-direction: column;
-        .broom-bean{
-            left: 40%;
-            bottom: 230px;
-        }
         .h3-holdup{
             width: 300px;
             padding: 0;
             margin-top: 50px;
+            .broom-bean{
+                left: 30px;
+                top: 20px;
+            }
         }
         .p-holdup{
             padding-bottom: 0;
@@ -17,11 +17,7 @@
             width: 540px;
         }
     }
-
     main{
-        .borderbean-silvertree{
-            display: none;
-        }
         section{
             flex-direction: column;
             .box-container{
@@ -44,10 +40,8 @@
 @media (max-width: 850px){
     .container-holdup{
         .brickred-bean{
-            left: -150px;
-        }
-        .broom-bean{
-            left: 32vw;
+            left: -350px;
+            bottom: 250px;
         }
     }
     .banner-container{
@@ -57,13 +51,16 @@
     }
     main{
         .beanimg-container{
+            .borderbean-silvertree{
+                right: 90px;
+            }
             .img-bean{
                 width: 38rem;
                 height: 20rem;
             }
         }
         .borderbean-cerisedark{
-            top: .5rem;
+            top: 0rem;
         }
         footer{
             .footer-container{
