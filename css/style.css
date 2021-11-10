@@ -13,7 +13,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 100%;
   height: 701px;
   background: linear-gradient(180deg, rgba(12, 57, 68, 0) 0%, rgba(12, 57, 68, 0.8) 100%), linear-gradient(0deg, rgba(12, 57, 68, 0.3), rgba(12, 57, 68, 0.3)), url(../images/team/team.png) no-repeat center center fixed;
   background-size: cover;
@@ -457,4 +456,5 @@ main {
   font-family: 'Raleway', sans-serif; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
