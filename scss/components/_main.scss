@@ -15,6 +15,7 @@ main{
         border-radius: 800px;
     }
     .atlantis-bean{
+        display: block;
         @include btnNav(480px, 900px, $atlantis);
         position: absolute;
         right: 0px;
@@ -93,7 +94,6 @@ main{
             }
             .woman2{
                 background: url(../images/participants/3.jpg);
-                object-fit: fill;
                 background-position: 62% 13%;
             }
             p{
