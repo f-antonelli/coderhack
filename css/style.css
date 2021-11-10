@@ -455,6 +455,9 @@ main {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   overflow-x: hidden;
   width: 100%; }
