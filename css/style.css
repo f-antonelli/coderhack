@@ -14,7 +14,7 @@
   align-items: center;
   flex-direction: column;
   height: 701px;
-  background: linear-gradient(180deg, rgba(12, 57, 68, 0) 0%, rgba(12, 57, 68, 0.8) 100%), linear-gradient(0deg, rgba(12, 57, 68, 0.3), rgba(12, 57, 68, 0.3)), url(../images/team/team.png) no-repeat center center fixed;
+  background: linear-gradient(180deg, rgba(12, 57, 68, 0) 0%, rgba(12, 57, 68, 0.8) 100%), linear-gradient(0deg, rgba(12, 57, 68, 0.3), rgba(12, 57, 68, 0.3)), url(../images/team/banner.jpeg) no-repeat center center fixed;
   background-size: cover;
   border-radius: 27px;
   margin: 0 17px 20px 17px; }
@@ -393,7 +393,7 @@ main {
       main footer .footer-container .social-media li a {
         margin: 20px; } }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .banner-container .text-banner h2 {
     font-size: 40px; }
   .banner-container .text-banner p {
